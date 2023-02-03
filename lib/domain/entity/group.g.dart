@@ -17,16 +17,19 @@ class GroupAdapter extends TypeAdapter<Group> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return Group(
-      name: fields[0] as String,
+      title: fields[0] as String,
+      isOpen: fields[1] as bool,
     );
   }
 
   @override
   void write(BinaryWriter writer, Group obj) {
     writer
-      ..writeByte(1)
+      ..writeByte(2)
       ..writeByte(0)
-      ..write(obj.name);
+      ..write(obj.title)
+      ..writeByte(1)
+      ..write(obj.isOpen);
   }
 
   @override

@@ -3,13 +3,15 @@ import 'package:hive/hive.dart';
 part 'group.g.dart';
 
 @HiveType(typeId: 1)
-class Group extends HiveObject {
-  // last used HiveField 1
+class Group {
   @HiveField(0)
-  String name;
+  String title;
 
+  @HiveField(1)
+  bool isOpen;
 
   Group({
-    required this.name
+    required this.title,
+    required this.isOpen
   });
 }
