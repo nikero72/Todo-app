@@ -1,16 +1,8 @@
-# todo_app
-
-A new Flutter project.
-
-## Getting Started
+# Todo app
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The app uses Hive to store data locally on the phone. A provider was used for state management.
+## Screenshots of the application
+![main](https://user-images.githubusercontent.com/123304698/215328165-d68e84d6-7df6-490b-b1de-71448188a610.png)
+![add](https://user-images.githubusercontent.com/123304698/215328171-add1222b-28fc-4384-9023-171b861cffe5.png)
